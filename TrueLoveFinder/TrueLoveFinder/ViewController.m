@@ -64,14 +64,14 @@
     NSDictionary *metrics = @{};
     
     [self.view addConstraints:[NSLayoutConstraint
-                               constraintsWithVisualFormat:@"|-30-[swipeableView]-30-|"
+                               constraintsWithVisualFormat:@"|-10-[swipeableView]-10-|"
                                options:0
                                metrics:metrics
                                views:NSDictionaryOfVariableBindings(
                                                                     swipeableView)]];
     
     [self.view addConstraints:[NSLayoutConstraint
-                               constraintsWithVisualFormat:@"V:|-100-[swipeableView]-100-|"
+                               constraintsWithVisualFormat:@"V:|-80-[swipeableView]-100-|"
                                options:0
                                metrics:metrics
                                views:NSDictionaryOfVariableBindings(
@@ -135,7 +135,8 @@
 //    } else if (self.index == 0){
 //        view.backgroundColor = COLOR_NEPHRITIS;
 //    }else {
-        view.backgroundColor = COLOR_TURQUOISE;
+//        view.backgroundColor = COLOR_TURQUOISE;
+    view.backgroundColor = [UIColor whiteColor];
 //    }
     
     Person *person = [[Person alloc] init];

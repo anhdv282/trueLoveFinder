@@ -28,6 +28,7 @@
 		045FFB8F1C3B811D00F7B791 /* ZLSwipeableViewSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB851C3B811D00F7B791 /* ZLSwipeableViewSwipeOptions.m */; };
 		045FFB941C3B8B2D00F7B791 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB931C3B8B2D00F7B791 /* CardView.m */; };
 		045FFB971C3BABC700F7B791 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB961C3BABC700F7B791 /* Person.m */; };
+		04C3B8A31C46630100243CD3 /* ListMatchPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B8A21C46630100243CD3 /* ListMatchPersonViewController.m */; };
 		04F467771C3BD558003D75D5 /* thuthao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467741C3BD558003D75D5 /* thuthao.jpg */; };
 		04F467781C3BD558003D75D5 /* huyenmy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467751C3BD558003D75D5 /* huyenmy.jpg */; };
 		04F467791C3BD558003D75D5 /* midu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467761C3BD558003D75D5 /* midu.jpg */; };
@@ -92,6 +93,8 @@
 		045FFB931C3B8B2D00F7B791 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
 		045FFB951C3BABC700F7B791 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		045FFB961C3BABC700F7B791 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		04C3B8A11C46630100243CD3 /* ListMatchPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListMatchPersonViewController.h; sourceTree = "<group>"; };
+		04C3B8A21C46630100243CD3 /* ListMatchPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListMatchPersonViewController.m; sourceTree = "<group>"; };
 		04F467741C3BD558003D75D5 /* thuthao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thuthao.jpg; sourceTree = "<group>"; };
 		04F467751C3BD558003D75D5 /* huyenmy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huyenmy.jpg; sourceTree = "<group>"; };
 		04F467761C3BD558003D75D5 /* midu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = midu.jpg; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 		045FFB391C3B710100F7B791 /* TrueLoveFinder */ = {
 			isa = PBXGroup;
 			children = (
+				04C3B8A01C46629D00243CD3 /* ViewController */,
+				0468272A1C436A78005D3E2E /* CustomView */,
 				04F4677A1C3BD55C003D75D5 /* ImagesTest */,
 				045FFB901C3B815200F7B791 /* Model */,
 				045FFB701C3B80F200F7B791 /* ThirdParty */,
@@ -158,8 +163,6 @@
 				045FFB4E1C3B710100F7B791 /* Info.plist */,
 				045FFB461C3B710100F7B791 /* TrueLoveFinder.xcdatamodeld */,
 				045FFB3A1C3B710100F7B791 /* Supporting Files */,
-				045FFB921C3B8B2D00F7B791 /* CardView.h */,
-				045FFB931C3B8B2D00F7B791 /* CardView.m */,
 			);
 			path = TrueLoveFinder;
 			sourceTree = "<group>";
@@ -232,6 +235,24 @@
 				045FFB961C3BABC700F7B791 /* Person.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		0468272A1C436A78005D3E2E /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				045FFB921C3B8B2D00F7B791 /* CardView.h */,
+				045FFB931C3B8B2D00F7B791 /* CardView.m */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		04C3B8A01C46629D00243CD3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04C3B8A11C46630100243CD3 /* ListMatchPersonViewController.h */,
+				04C3B8A21C46630100243CD3 /* ListMatchPersonViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		04F4677A1C3BD55C003D75D5 /* ImagesTest */ = {
@@ -382,6 +403,7 @@
 				045FFB861C3B811D00F7B791 /* DefaultDirectionInterpretor.m in Sources */,
 				045FFB8F1C3B811D00F7B791 /* ZLSwipeableViewSwipeOptions.m in Sources */,
 				045FFB8B1C3B811D00F7B791 /* Utils.m in Sources */,
+				04C3B8A31C46630100243CD3 /* ListMatchPersonViewController.m in Sources */,
 				045FFB481C3B710100F7B791 /* TrueLoveFinder.xcdatamodeld in Sources */,
 				045FFB8A1C3B811D00F7B791 /* Scheduler.m in Sources */,
 				045FFB8C1C3B811D00F7B791 /* ViewManager.m in Sources */,

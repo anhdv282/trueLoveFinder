@@ -49,7 +49,6 @@ UILabel *lblSchool;
     self.layer.shadowRadius = 4.0;
     self.layer.shouldRasterize = YES;
     self.layer.rasterizationScale = [UIScreen mainScreen].scale;
-    
     // Corner Radius
     self.layer.cornerRadius = 10.0;//
     lblName = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, WIDTH_VIEW - 20, 30)];
@@ -57,8 +56,9 @@ UILabel *lblSchool;
     lblName.text = @"name";
     lblName.textAlignment = NSTextAlignmentCenter;
     
-    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 50, WIDTH_VIEW - 20, WIDTH_VIEW - 20)];
-    viewWorkAge = [[UIView alloc] initWithFrame:CGRectMake(10, 50 + WIDTH_VIEW - 20 + 8, WIDTH_VIEW - 20, 30)];
+    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 50, WIDTH_VIEW, WIDTH_VIEW)];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    viewWorkAge = [[UIView alloc] initWithFrame:CGRectMake(10, 50 + WIDTH_VIEW + 8, WIDTH_VIEW - 20, 30)];
     lblWork = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, viewWorkAge.frame.size.width/2, 30)];
     lblAge = [[UILabel alloc] initWithFrame:CGRectMake(viewWorkAge.frame.size.width/2, 0, viewWorkAge.frame.size.width/2, 30)];
     lblAge.textAlignment = NSTextAlignmentRight;
