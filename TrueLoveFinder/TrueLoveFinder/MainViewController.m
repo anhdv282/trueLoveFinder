@@ -1,18 +1,18 @@
 //
-//  ListMatchPersonViewController.m
+//  MainViewController.m
 //  TrueLoveFinder
 //
-//  Created by mac on 1/21/16.
+//  Created by mac on 1/20/16.
 //  Copyright © 2016 vad. All rights reserved.
 //
 
-#import "ListMatchPersonViewController.h"
+#import "MainViewController.h"
 
-@interface ListMatchPersonViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ListMatchPersonViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
