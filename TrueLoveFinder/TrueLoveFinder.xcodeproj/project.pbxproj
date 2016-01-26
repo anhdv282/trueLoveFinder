@@ -35,6 +35,11 @@
 		0477DD951C4F7A9C00150ACA /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0477DD931C4F7A9C00150ACA /* SettingViewController.xib */; };
 		04B024241C50E6B7008EC315 /* ListMatchPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B024221C50E6B7008EC315 /* ListMatchPersonViewController.m */; };
 		04B024251C50E6B7008EC315 /* ListMatchPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B024231C50E6B7008EC315 /* ListMatchPersonViewController.xib */; };
+		04EFF80E1C578377006B4CCF /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF8041C578377006B4CCF /* MCNewCustomLayer.m */; };
+		04EFF80F1C578377006B4CCF /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF8061C578377006B4CCF /* MCNewCustomLayeredView.m */; };
+		04EFF8101C578377006B4CCF /* MCPercentageDoughnutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF8091C578377006B4CCF /* MCPercentageDoughnutView.m */; };
+		04EFF8111C578377006B4CCF /* MCSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF80B1C578377006B4CCF /* MCSliceLayer.m */; };
+		04EFF8121C578377006B4CCF /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF80D1C578377006B4CCF /* MCUtil.m */; };
 		04F467771C3BD558003D75D5 /* thuthao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467741C3BD558003D75D5 /* thuthao.jpg */; };
 		04F467781C3BD558003D75D5 /* huyenmy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467751C3BD558003D75D5 /* huyenmy.jpg */; };
 		04F467791C3BD558003D75D5 /* midu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467761C3BD558003D75D5 /* midu.jpg */; };
@@ -111,6 +116,18 @@
 		04B024211C50E6B7008EC315 /* ListMatchPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListMatchPersonViewController.h; sourceTree = "<group>"; };
 		04B024221C50E6B7008EC315 /* ListMatchPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListMatchPersonViewController.m; sourceTree = "<group>"; };
 		04B024231C50E6B7008EC315 /* ListMatchPersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListMatchPersonViewController.xib; sourceTree = "<group>"; };
+		04EFF8021C578377006B4CCF /* MCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCore.h; sourceTree = "<group>"; };
+		04EFF8031C578377006B4CCF /* MCNewCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayer.h; sourceTree = "<group>"; };
+		04EFF8041C578377006B4CCF /* MCNewCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayer.m; sourceTree = "<group>"; };
+		04EFF8051C578377006B4CCF /* MCNewCustomLayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayeredView.h; sourceTree = "<group>"; };
+		04EFF8061C578377006B4CCF /* MCNewCustomLayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayeredView.m; sourceTree = "<group>"; };
+		04EFF8071C578377006B4CCF /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h"; sourceTree = "<group>"; };
+		04EFF8081C578377006B4CCF /* MCPercentageDoughnutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPercentageDoughnutView.h; sourceTree = "<group>"; };
+		04EFF8091C578377006B4CCF /* MCPercentageDoughnutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPercentageDoughnutView.m; sourceTree = "<group>"; };
+		04EFF80A1C578377006B4CCF /* MCSliceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSliceLayer.h; sourceTree = "<group>"; };
+		04EFF80B1C578377006B4CCF /* MCSliceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSliceLayer.m; sourceTree = "<group>"; };
+		04EFF80C1C578377006B4CCF /* MCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUtil.h; sourceTree = "<group>"; };
+		04EFF80D1C578377006B4CCF /* MCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUtil.m; sourceTree = "<group>"; };
 		04F467741C3BD558003D75D5 /* thuthao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thuthao.jpg; sourceTree = "<group>"; };
 		04F467751C3BD558003D75D5 /* huyenmy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huyenmy.jpg; sourceTree = "<group>"; };
 		04F467761C3BD558003D75D5 /* midu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = midu.jpg; sourceTree = "<group>"; };
@@ -215,6 +232,7 @@
 		045FFB701C3B80F200F7B791 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				04EFF8011C57835A006B4CCF /* CircleProcessing */,
 				045FFB711C3B811D00F7B791 /* ZLSwipeableView */,
 			);
 			name = ThirdParty;
@@ -287,6 +305,25 @@
 				04B024231C50E6B7008EC315 /* ListMatchPersonViewController.xib */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		04EFF8011C57835A006B4CCF /* CircleProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				04EFF8021C578377006B4CCF /* MCCore.h */,
+				04EFF8031C578377006B4CCF /* MCNewCustomLayer.h */,
+				04EFF8041C578377006B4CCF /* MCNewCustomLayer.m */,
+				04EFF8051C578377006B4CCF /* MCNewCustomLayeredView.h */,
+				04EFF8061C578377006B4CCF /* MCNewCustomLayeredView.m */,
+				04EFF8071C578377006B4CCF /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */,
+				04EFF8081C578377006B4CCF /* MCPercentageDoughnutView.h */,
+				04EFF8091C578377006B4CCF /* MCPercentageDoughnutView.m */,
+				04EFF80A1C578377006B4CCF /* MCSliceLayer.h */,
+				04EFF80B1C578377006B4CCF /* MCSliceLayer.m */,
+				04EFF80C1C578377006B4CCF /* MCUtil.h */,
+				04EFF80D1C578377006B4CCF /* MCUtil.m */,
+			);
+			name = CircleProcessing;
 			sourceTree = "<group>";
 		};
 		04F4677A1C3BD55C003D75D5 /* ImagesTest */ = {
@@ -435,9 +472,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EFF8121C578377006B4CCF /* MCUtil.m in Sources */,
 				045FFB881C3B811D00F7B791 /* DefaultViewAnimator.m in Sources */,
 				045FFB421C3B710100F7B791 /* ViewController.m in Sources */,
 				045FFB861C3B811D00F7B791 /* DefaultDirectionInterpretor.m in Sources */,
+				04EFF80F1C578377006B4CCF /* MCNewCustomLayeredView.m in Sources */,
 				045FFB8F1C3B811D00F7B791 /* ZLSwipeableViewSwipeOptions.m in Sources */,
 				045FFB8B1C3B811D00F7B791 /* Utils.m in Sources */,
 				045FFB481C3B710100F7B791 /* TrueLoveFinder.xcdatamodeld in Sources */,
@@ -448,13 +487,16 @@
 				045FFB871C3B811D00F7B791 /* DefaultShouldSwipeDeterminator.m in Sources */,
 				045FFB971C3BABC700F7B791 /* Person.m in Sources */,
 				045FFB8D1C3B811D00F7B791 /* ZLSwipeableView.m in Sources */,
+				04EFF8111C578377006B4CCF /* MCSliceLayer.m in Sources */,
 				0477DD901C4F786900150ACA /* MainScrollViewController.m in Sources */,
 				0477DD8C1C4F754A00150ACA /* MainViewController.m in Sources */,
+				04EFF8101C578377006B4CCF /* MCPercentageDoughnutView.m in Sources */,
 				045FFB3C1C3B710100F7B791 /* main.m in Sources */,
 				045FFB941C3B8B2D00F7B791 /* CardView.m in Sources */,
 				045FFB8E1C3B811D00F7B791 /* ZLSwipeableViewMovement.m in Sources */,
 				045FFB891C3B811D00F7B791 /* PanGestureRecognizer.m in Sources */,
 				0477DD941C4F7A9C00150ACA /* SettingViewController.m in Sources */,
+				04EFF80E1C578377006B4CCF /* MCNewCustomLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

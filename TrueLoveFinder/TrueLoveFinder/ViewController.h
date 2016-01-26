@@ -11,7 +11,8 @@
 #import "CardView.h"
 @interface ViewController : UIViewController <ZLSwipeableViewDataSource,ZLSwipeableViewDelegate>
 
-@property (nonatomic, strong) ZLSwipeableView *swipeableView;
+//@property (nonatomic, strong) ZLSwipeableView *swipeableView;
+@property (weak, nonatomic) IBOutlet ZLSwipeableView *swipeableView;
 
 - (UIView *)nextViewForSwipeableView:(ZLSwipeableView *)swipeableView;
 @end

@@ -51,7 +51,7 @@ UILabel *lblSchool;
     self.layer.rasterizationScale = [UIScreen mainScreen].scale;
     // Corner Radius
     self.layer.cornerRadius = 10.0;//
-    lblName = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, WIDTH_VIEW - 20, 30)];
+    lblName = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, WIDTH_VIEW - 20, 30)];//44
     lblName.textColor = [UIColor blackColor];
     lblName.text = @"name";
     lblName.textAlignment = NSTextAlignmentCenter;

@@ -49,10 +49,9 @@
     [self.persons addObject:person1];
     [self.persons addObject:person2];
     [self.persons addObject:person3];
-    ZLSwipeableView *swipeableView = [[ZLSwipeableView alloc] initWithFrame:CGRectZero];
-    self.swipeableView = swipeableView;
-    [self.view addSubview:self.swipeableView];
-    
+//    ZLSwipeableView *swipeableView = [[ZLSwipeableView alloc] initWithFrame:CGRectZero];
+//    self.swipeableView = swipeableView;
+//    [self.view addSubview:self.swipeableView];
     // Required Data Source
     self.swipeableView.dataSource = self;
     
@@ -60,22 +59,21 @@
     self.swipeableView.delegate = self;
     
     self.swipeableView.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    NSDictionary *metrics = @{};
-    
-    [self.view addConstraints:[NSLayoutConstraint
-                               constraintsWithVisualFormat:@"|-10-[swipeableView]-10-|"
-                               options:0
-                               metrics:metrics
-                               views:NSDictionaryOfVariableBindings(
-                                                                    swipeableView)]];
-    
-    [self.view addConstraints:[NSLayoutConstraint
-                               constraintsWithVisualFormat:@"V:|-80-[swipeableView]-100-|"
-                               options:0
-                               metrics:metrics
-                               views:NSDictionaryOfVariableBindings(
-                                                                    swipeableView)]];
+//    NSDictionary *metrics = @{};
+//    
+//    [self.view addConstraints:[NSLayoutConstraint
+//                               constraintsWithVisualFormat:@"|-10-[swipeableView]-10-|"
+//                               options:0
+//                               metrics:metrics
+//                               views:NSDictionaryOfVariableBindings(
+//                                                                    swipeableView)]];
+//    
+//    [self.view addConstraints:[NSLayoutConstraint
+//                               constraintsWithVisualFormat:@"V:|-80-[swipeableView]-100-|"
+//                               options:0
+//                               metrics:metrics
+//                               views:NSDictionaryOfVariableBindings(
+//                                                                    swipeableView)]];
 }
 
 - (void)viewDidLayoutSubviews {

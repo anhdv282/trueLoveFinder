@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iBn-Dp-oCJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Main Scroll View Controller-->
@@ -50,38 +51,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-CW-XkD">
-                                <rect key="frame" x="20" y="599" width="335" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymu-bz-GtO">
-                                        <rect key="frame" x="180" y="15" width="30" height="30"/>
-                                        <state key="normal" title="Like"/>
-                                        <connections>
-                                            <action selector="btnLikeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKT-YN-G9r"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sil-Zn-ynr">
-                                        <rect key="frame" x="108" y="15" width="64" height="30"/>
-                                        <state key="normal" title="Don't like"/>
-                                        <connections>
-                                            <action selector="btnUnLikeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oBv-Rc-cYd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="o0p-7m-3xf"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZR-gK-p8l" customClass="ZLSwipeableView">
-                                <rect key="frame" x="8" y="68" width="359" height="523"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rap-T2-8w4">
                                 <rect key="frame" x="0.0" y="20" width="375" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1I-AZ-Red">
-                                        <rect key="frame" x="90" y="11" width="194" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1I-AZ-Red">
+                                        <rect key="frame" x="170" y="10" width="34" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -89,7 +63,59 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="O1I-AZ-Red" firstAttribute="centerY" secondItem="Rap-T2-8w4" secondAttribute="centerY" id="8yf-Cx-32a"/>
+                                    <constraint firstItem="O1I-AZ-Red" firstAttribute="centerX" secondItem="Rap-T2-8w4" secondAttribute="centerX" id="I0f-ke-O4H"/>
                                     <constraint firstAttribute="height" constant="40" id="ioI-JQ-9ib"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-CW-XkD">
+                                <rect key="frame" x="20" y="559" width="335" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sil-Zn-ynr">
+                                        <rect key="frame" x="108" y="15" width="64" height="30"/>
+                                        <state key="normal" title="Don't like"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="86" width="64" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="btnUnLikeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oBv-Rc-cYd"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiH-QA-FAn" customClass="MCPercentageDoughnutView">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="96" y="8" width="144" height="100"/>
+                                        </variation>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymu-bz-GtO">
+                                        <rect key="frame" x="180" y="15" width="30" height="30"/>
+                                        <state key="normal" title="Like"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="305" y="86" width="30" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="btnLikeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKT-YN-G9r"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="PiH-QA-FAn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="PiH-QA-FAn"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZR-gK-p8l" customClass="ZLSwipeableView">
+                                <rect key="frame" x="8" y="68" width="359" height="483"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fZR-gK-p8l" secondAttribute="height" multiplier="1:1.3" id="odz-kI-E6a"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -108,10 +134,13 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="swipeableView" destination="fZR-gK-p8l" id="5Qi-1x-57E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308.5" y="461.5"/>
+            <point key="canvasLocation" x="308.25" y="460.875"/>
         </scene>
     </scenes>
 </document>
