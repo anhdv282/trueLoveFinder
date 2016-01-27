@@ -8,9 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
-#define COLOR_TURQUOISE [UIColor colorWithRed:0.10196078431372549 green:0.7372549019607844 blue:0.611764705882353 alpha:1.0]
-#define COLOR_GREEN_SEA [UIColor colorWithRed:0.08627450980392157 green:0.6274509803921569 blue:0.5215686274509804 alpha:1.0]
-#define COLOR_NEPHRITIS [UIColor colorWithRed:0.15294117647058825 green:0.6823529411764706 blue:0.3764705882352941 alpha:1.0]
+
 @interface ViewController ()
 //@property (nonatomic, strong) NSArray *colors,*names;
 @property (nonatomic, strong) NSMutableArray *persons,*photos;
@@ -20,20 +18,47 @@
 @end
 
 @implementation ViewController
-// 1. initData
-// 2. add ZLSwipe
-// 3. add view and button
 
 // Model: Name/ Age/ Gender/ Image/ Work/ School/ Desc/ Interest/ Friends
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self initData];
+    [self initCirclePercentageView];
+    [self initSwipeableView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) initSwipeableView {
+    //    ZLSwipeableView *swipeableView = [[ZLSwipeableView alloc] initWithFrame:CGRectZero];
+    //    self.swipeableView = swipeableView;
+    //    [self.view addSubview:self.swipeableView];
+    // Required Data Source
+    self.swipeableView.dataSource = self;
+    // Optional Delegate
+    self.swipeableView.delegate = self;
+    self.swipeableView.translatesAutoresizingMaskIntoConstraints = NO;
+}
+
+- (void) initCirclePercentageView {
+    self.circlePercentageView.dataSource = self;
+    self.circlePercentageView.percentage              = 0.0;
+    self.circlePercentageView.linePercentage          = 0.15;
+    self.circlePercentageView.animationDuration       = DELAY_RECORDING;
+    self.circlePercentageView.decimalPlaces           = 1;
+    self.circlePercentageView.showTextLabel           = NO;
+//    self.circlePercentageView.animatesBegining        = NO;
+    self.circlePercentageView.fillColor               = [UIColor greenColor];
+    self.circlePercentageView.unfillColor             = [MCUtil iOS7DefaultGrayColorForBackground];
+    self.circlePercentageView.textLabel.textColor     = [UIColor blackColor];
+    self.circlePercentageView.textLabel.font          = [UIFont systemFontOfSize:50];
+    self.circlePercentageView.gradientColor1          = COLOR_RED_MAIN;
+    self.circlePercentageView.gradientColor2          = [MCUtil iOS7DefaultGrayColorForBackground];
+    self.circlePercentageView.enableGradient          = YES;
 }
 
 - (void) initData {
@@ -49,36 +74,13 @@
     [self.persons addObject:person1];
     [self.persons addObject:person2];
     [self.persons addObject:person3];
-//    ZLSwipeableView *swipeableView = [[ZLSwipeableView alloc] initWithFrame:CGRectZero];
-//    self.swipeableView = swipeableView;
-//    [self.view addSubview:self.swipeableView];
-    // Required Data Source
-    self.swipeableView.dataSource = self;
-    
-    // Optional Delegate
-    self.swipeableView.delegate = self;
-    
-    self.swipeableView.translatesAutoresizingMaskIntoConstraints = NO;
-//    NSDictionary *metrics = @{};
-//    
-//    [self.view addConstraints:[NSLayoutConstraint
-//                               constraintsWithVisualFormat:@"|-10-[swipeableView]-10-|"
-//                               options:0
-//                               metrics:metrics
-//                               views:NSDictionaryOfVariableBindings(
-//                                                                    swipeableView)]];
-//    
-//    [self.view addConstraints:[NSLayoutConstraint
-//                               constraintsWithVisualFormat:@"V:|-80-[swipeableView]-100-|"
-//                               options:0
-//                               metrics:metrics
-//                               views:NSDictionaryOfVariableBindings(
-//                                                                    swipeableView)]];
+    self.isRecording = false;
 }
 
 - (void)viewDidLayoutSubviews {
     [self.swipeableView loadViewsIfNeeded];
 }
+
 #pragma mark - Action
 - (IBAction)btnUnLikeTapped:(UIButton *)sender {
     [self.swipeableView swipeTopViewToLeft];
@@ -86,6 +88,19 @@
 
 - (IBAction)btnLikeTapped:(UIButton *)sender {
     [self.swipeableView swipeTopViewToRight];
+}
+
+- (IBAction)tapStartStopRecording:(id)sender {
+    if (self.isRecording == false) {
+        [self.imgStartStop setImage:[UIImage imageNamed:@"stop_icon"]];
+        self.isRecording = true;
+        [self runCirclePercentage];
+    } else {
+        [self.imgStartStop setImage:[UIImage imageNamed:@"start_icon"]];
+        self.isRecording = false;
+        self.circlePercentageView.percentage = 0.0;
+        self.circlePercentageView.animationEnabled = NO;
+    }
 }
 
 #pragma mark - ZLSwipeableViewDelegate
@@ -143,5 +158,37 @@
     self.index++;
     
     return view;
+}
+#pragma mark - MCPercentageDoughnut
+- (UIView*)viewForCenterOfPercentageDoughnutView:(MCPercentageDoughnutView *)pecentageDoughnutView
+                                  withCenterView:(UIView *)centerView {
+//    centerView.bounds = CGRectMake(6, 5, 30, 30);
+//    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"play_icon"]];
+//    imageView.frame = centerView.bounds;
+    return nil;
+}
+- (void)setView:(UIView *)currentView setX:(CGFloat) newX setY:(CGFloat) newY {
+    CGRect frame = currentView.frame;
+    frame.origin.x = newX;
+    frame.origin.y = newY;
+    currentView.frame = frame;
+}
+- (void) runCirclePercentage {
+    self.circlePercentageView.animatesBegining = YES;
+    self.circlePercentageView.percentage = 1.0;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((DELAY_RECORDING-1) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if (self.circlePercentageView.percentage == 1.0) {
+            self.circlePercentageView.percentage = 0.0;
+            self.circlePercentageView.animationEnabled = NO;
+        }
+    });
+}
+#pragma mark - Random Function
+-(int) generateRandomNumberWithlowerBound:(int)lowerBound
+                               upperBound:(int)upperBound
+{
+    int rndValue = lowerBound + arc4random() % (upperBound - lowerBound);
+    return rndValue;
 }
 @end

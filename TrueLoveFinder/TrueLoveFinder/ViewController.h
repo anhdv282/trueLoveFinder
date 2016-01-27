@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "ZLSwipeableView/ZLSwipeableView.h"
 #import "CardView.h"
-@interface ViewController : UIViewController <ZLSwipeableViewDataSource,ZLSwipeableViewDelegate>
+#import "MCPercentageDoughnutView.h"
+#import "Macro.h"
+@interface ViewController : UIViewController <ZLSwipeableViewDataSource,ZLSwipeableViewDelegate,MCPercentageDoughnutViewDataSource>
 
 //@property (nonatomic, strong) ZLSwipeableView *swipeableView;
 @property (weak, nonatomic) IBOutlet ZLSwipeableView *swipeableView;
-
+@property (weak, nonatomic) IBOutlet MCPercentageDoughnutView *circlePercentageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imgStartStop;
+@property (assign, nonatomic) BOOL isRecording;
 - (UIView *)nextViewForSwipeableView:(ZLSwipeableView *)swipeableView;
 @end
 
