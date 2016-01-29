@@ -55,7 +55,7 @@ UILabel *lblSchool;
     lblName.textColor = [UIColor blackColor];
     lblName.text = @"name";
     lblName.textAlignment = NSTextAlignmentCenter;
-    
+    lblName.textColor = COLOR_TEXT_BLUE;
     imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 50, WIDTH_VIEW, WIDTH_VIEW)];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     viewWorkAge = [[UIView alloc] initWithFrame:CGRectMake(10, 50 + WIDTH_VIEW + 8, WIDTH_VIEW - 20, 30)];
@@ -64,9 +64,10 @@ UILabel *lblSchool;
     lblAge.textAlignment = NSTextAlignmentRight;
     lblWork.text = @"Emotiv";//
     lblAge.text = @"23";//
+    lblWork.textColor = COLOR_TEXT_BLUE;
+    lblAge.textColor = COLOR_TEXT_BLUE;
     [viewWorkAge addSubview:lblWork];
     [viewWorkAge addSubview:lblAge];
-    [imageView setImage:[UIImage imageNamed:@""]];
     
     self.viewDidChoose = [[UIView alloc] initWithFrame:CGRectMake(WIDTH_VIEW/2 - 50, HEIGHT_VIEW/2 - 50, 50, 50)];
     [self.viewDidChoose setHidden:YES];

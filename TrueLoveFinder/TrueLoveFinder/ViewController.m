@@ -56,7 +56,7 @@
     self.circlePercentageView.unfillColor             = [MCUtil iOS7DefaultGrayColorForBackground];
     self.circlePercentageView.textLabel.textColor     = [UIColor blackColor];
     self.circlePercentageView.textLabel.font          = [UIFont systemFontOfSize:50];
-    self.circlePercentageView.gradientColor1          = COLOR_RED_MAIN;
+    self.circlePercentageView.gradientColor1          = COLOR_YELLOW_MAIN;
     self.circlePercentageView.gradientColor2          = [MCUtil iOS7DefaultGrayColorForBackground];
     self.circlePercentageView.enableGradient          = YES;
 }
@@ -64,13 +64,13 @@
 - (void) initData {
     self.index = 0;
     self.persons = [[NSMutableArray alloc] init];
-    self.photos = [[NSMutableArray alloc] initWithArray:@[@"thuthao.jpg",@"huyenmy.jpg",@"midu.jpg"]];
+    self.photos = [[NSMutableArray alloc] initWithArray:@[@"hami.jpg",@"huyenmy.jpg",@"midu.jpg"]];
     Person *person1 = [[Person alloc] init];
     Person *person2 = [[Person alloc] init];
     Person *person3 = [[Person alloc] init];
-    [person1 setPerson:@"Viet Anh" images:self.photos];
-    [person2 setPerson:@"Vit Em" images:self.photos];
-    [person3 setPerson:@"Vit Vit" images:self.photos];
+    [person1 setPerson:@"Hà Mi" images:self.photos];
+    [person2 setPerson:@"Huyền My" images:self.photos];
+    [person3 setPerson:@"Mỹ Dung" images:self.photos];
     [self.persons addObject:person1];
     [self.persons addObject:person2];
     [self.persons addObject:person3];
@@ -92,11 +92,11 @@
 
 - (IBAction)tapStartStopRecording:(id)sender {
     if (self.isRecording == false) {
-        [self.imgStartStop setImage:[UIImage imageNamed:@"stop_icon"]];
+        [self.imgStartStop setImage:[UIImage imageNamed:@"stop-icon"]];
         self.isRecording = true;
         [self runCirclePercentage];
     } else {
-        [self.imgStartStop setImage:[UIImage imageNamed:@"start_icon"]];
+        [self.imgStartStop setImage:[UIImage imageNamed:@"start-icon"]];
         self.isRecording = false;
         self.circlePercentageView.percentage = 0.0;
         self.circlePercentageView.animationEnabled = NO;
@@ -181,6 +181,7 @@
         if (self.circlePercentageView.percentage == 1.0) {
             self.circlePercentageView.percentage = 0.0;
             self.circlePercentageView.animationEnabled = NO;
+            [self.imgStartStop setImage:[UIImage imageNamed:@"start-icon"]];
         }
     });
 }

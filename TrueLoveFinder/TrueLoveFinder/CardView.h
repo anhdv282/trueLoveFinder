@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Macro.h"
 @interface CardView : UIView
 - (void) updateInfo:(NSString*) name
           imageName:(NSString*) imageName;

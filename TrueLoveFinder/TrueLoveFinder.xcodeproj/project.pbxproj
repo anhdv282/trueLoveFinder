@@ -35,9 +35,12 @@
 		04EFF8121C578377006B4CCF /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF80D1C578377006B4CCF /* MCUtil.m */; };
 		04EFF8151C58835E006B4CCF /* ListPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF8141C58835E006B4CCF /* ListPersonViewController.m */; };
 		04EFF8181C58836C006B4CCF /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF8171C58836C006B4CCF /* SettingViewController.m */; };
-		04F467771C3BD558003D75D5 /* thuthao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467741C3BD558003D75D5 /* thuthao.jpg */; };
-		04F467781C3BD558003D75D5 /* huyenmy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467751C3BD558003D75D5 /* huyenmy.jpg */; };
-		04F467791C3BD558003D75D5 /* midu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F467761C3BD558003D75D5 /* midu.jpg */; };
+		04EFF8631C5A281C006B4CCF /* SVN-Haptic Script.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04EFF8621C5A27F6006B4CCF /* SVN-Haptic Script.otf */; };
+		04EFF8651C5A295D006B4CCF /* chat-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EFF8641C5A295D006B4CCF /* chat-icon.png */; };
+		04EFF8671C5A2A75006B4CCF /* setting-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EFF8661C5A2A75006B4CCF /* setting-icon.png */; };
+		04EFF8691C5B1F0F006B4CCF /* midu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04EFF8681C5B1F0F006B4CCF /* midu.jpg */; };
+		04EFF86B1C5B2047006B4CCF /* huyenmy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04EFF86A1C5B2047006B4CCF /* huyenmy.jpg */; };
+		04EFF86D1C5B2095006B4CCF /* hami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04EFF86C1C5B2095006B4CCF /* hami.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,9 +119,12 @@
 		04EFF8141C58835E006B4CCF /* ListPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPersonViewController.m; sourceTree = "<group>"; };
 		04EFF8161C58836C006B4CCF /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		04EFF8171C58836C006B4CCF /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		04F467741C3BD558003D75D5 /* thuthao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thuthao.jpg; sourceTree = "<group>"; };
-		04F467751C3BD558003D75D5 /* huyenmy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huyenmy.jpg; sourceTree = "<group>"; };
-		04F467761C3BD558003D75D5 /* midu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = midu.jpg; sourceTree = "<group>"; };
+		04EFF8621C5A27F6006B4CCF /* SVN-Haptic Script.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SVN-Haptic Script.otf"; sourceTree = "<group>"; };
+		04EFF8641C5A295D006B4CCF /* chat-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-icon.png"; sourceTree = "<group>"; };
+		04EFF8661C5A2A75006B4CCF /* setting-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-icon.png"; sourceTree = "<group>"; };
+		04EFF8681C5B1F0F006B4CCF /* midu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = midu.jpg; sourceTree = "<group>"; };
+		04EFF86A1C5B2047006B4CCF /* huyenmy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huyenmy.jpg; sourceTree = "<group>"; };
+		04EFF86C1C5B2095006B4CCF /* hami.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hami.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,10 +175,10 @@
 		045FFB391C3B710100F7B791 /* TrueLoveFinder */ = {
 			isa = PBXGroup;
 			children = (
+				04EFF8611C5A27DE006B4CCF /* Resources */,
 				0477DD961C4F7AD600150ACA /* Common */,
 				04C3B8A01C46629D00243CD3 /* ViewController */,
 				0468272A1C436A78005D3E2E /* CustomView */,
-				04F4677A1C3BD55C003D75D5 /* ImagesTest */,
 				045FFB901C3B815200F7B791 /* Model */,
 				045FFB701C3B80F200F7B791 /* ThirdParty */,
 				045FFB3D1C3B710100F7B791 /* AppDelegate.h */,
@@ -307,12 +313,23 @@
 			name = CircleProcessing;
 			sourceTree = "<group>";
 		};
+		04EFF8611C5A27DE006B4CCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04F4677A1C3BD55C003D75D5 /* ImagesTest */,
+				04EFF8621C5A27F6006B4CCF /* SVN-Haptic Script.otf */,
+				04EFF8641C5A295D006B4CCF /* chat-icon.png */,
+				04EFF8661C5A2A75006B4CCF /* setting-icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		04F4677A1C3BD55C003D75D5 /* ImagesTest */ = {
 			isa = PBXGroup;
 			children = (
-				04F467741C3BD558003D75D5 /* thuthao.jpg */,
-				04F467751C3BD558003D75D5 /* huyenmy.jpg */,
-				04F467761C3BD558003D75D5 /* midu.jpg */,
+				04EFF86C1C5B2095006B4CCF /* hami.jpg */,
+				04EFF86A1C5B2047006B4CCF /* huyenmy.jpg */,
+				04EFF8681C5B1F0F006B4CCF /* midu.jpg */,
 			);
 			name = ImagesTest;
 			sourceTree = "<group>";
@@ -420,12 +437,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EFF8631C5A281C006B4CCF /* SVN-Haptic Script.otf in Resources */,
+				04EFF8671C5A2A75006B4CCF /* setting-icon.png in Resources */,
+				04EFF8691C5B1F0F006B4CCF /* midu.jpg in Resources */,
 				045FFB4D1C3B710100F7B791 /* LaunchScreen.storyboard in Resources */,
-				04F467781C3BD558003D75D5 /* huyenmy.jpg in Resources */,
+				04EFF86D1C5B2095006B4CCF /* hami.jpg in Resources */,
 				045FFB4A1C3B710100F7B791 /* Assets.xcassets in Resources */,
+				04EFF86B1C5B2047006B4CCF /* huyenmy.jpg in Resources */,
 				045FFB451C3B710100F7B791 /* Main.storyboard in Resources */,
-				04F467791C3BD558003D75D5 /* midu.jpg in Resources */,
-				04F467771C3BD558003D75D5 /* thuthao.jpg in Resources */,
+				04EFF8651C5A295D006B4CCF /* chat-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
