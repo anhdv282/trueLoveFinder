@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Person.h"
 @interface ListPersonViewController : UIViewController <UITableViewDataSource,UITableViewDelegate> {
-    NSMutableArray *listPerson;
+    NSMutableArray *listPerson,*photos;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableListPerson;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewList;
 
 @end

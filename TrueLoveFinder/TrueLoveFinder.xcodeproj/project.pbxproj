@@ -28,6 +28,10 @@
 		045FFB8F1C3B811D00F7B791 /* ZLSwipeableViewSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB851C3B811D00F7B791 /* ZLSwipeableViewSwipeOptions.m */; };
 		045FFB941C3B8B2D00F7B791 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB931C3B8B2D00F7B791 /* CardView.m */; };
 		045FFB971C3BABC700F7B791 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB961C3BABC700F7B791 /* Person.m */; };
+		049824171C5BCC5500E67EEB /* ListPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 049824151C5BCC5500E67EEB /* ListPersonTableViewCell.m */; };
+		049824181C5BCC5500E67EEB /* ListPersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049824161C5BCC5500E67EEB /* ListPersonTableViewCell.xib */; };
+		0498241F1C5C0AD000E67EEB /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498241D1C5C0AD000E67EEB /* ChatViewController.m */; };
+		049824201C5C0AD000E67EEB /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498241E1C5C0AD000E67EEB /* ChatViewController.xib */; };
 		04EFF80E1C578377006B4CCF /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF8041C578377006B4CCF /* MCNewCustomLayer.m */; };
 		04EFF80F1C578377006B4CCF /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF8061C578377006B4CCF /* MCNewCustomLayeredView.m */; };
 		04EFF8101C578377006B4CCF /* MCPercentageDoughnutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF8091C578377006B4CCF /* MCPercentageDoughnutView.m */; };
@@ -103,6 +107,12 @@
 		045FFB951C3BABC700F7B791 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		045FFB961C3BABC700F7B791 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		0477DD971C4F7B0400150ACA /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		049824141C5BCC5500E67EEB /* ListPersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPersonTableViewCell.h; sourceTree = "<group>"; };
+		049824151C5BCC5500E67EEB /* ListPersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPersonTableViewCell.m; sourceTree = "<group>"; };
+		049824161C5BCC5500E67EEB /* ListPersonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListPersonTableViewCell.xib; sourceTree = "<group>"; };
+		0498241C1C5C0AD000E67EEB /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		0498241D1C5C0AD000E67EEB /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		0498241E1C5C0AD000E67EEB /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		04EFF8021C578377006B4CCF /* MCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCore.h; sourceTree = "<group>"; };
 		04EFF8031C578377006B4CCF /* MCNewCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayer.h; sourceTree = "<group>"; };
 		04EFF8041C578377006B4CCF /* MCNewCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayer.m; sourceTree = "<group>"; };
@@ -281,13 +291,27 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		049824131C5BCBCE00E67EEB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				04EFF8131C58835E006B4CCF /* ListPersonViewController.h */,
+				04EFF8141C58835E006B4CCF /* ListPersonViewController.m */,
+				049824141C5BCC5500E67EEB /* ListPersonTableViewCell.h */,
+				049824151C5BCC5500E67EEB /* ListPersonTableViewCell.m */,
+				049824161C5BCC5500E67EEB /* ListPersonTableViewCell.xib */,
+				0498241C1C5C0AD000E67EEB /* ChatViewController.h */,
+				0498241D1C5C0AD000E67EEB /* ChatViewController.m */,
+				0498241E1C5C0AD000E67EEB /* ChatViewController.xib */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
 		04C3B8A01C46629D00243CD3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				049824131C5BCBCE00E67EEB /* List */,
 				045FFB401C3B710100F7B791 /* ViewController.h */,
 				045FFB411C3B710100F7B791 /* ViewController.m */,
-				04EFF8131C58835E006B4CCF /* ListPersonViewController.h */,
-				04EFF8141C58835E006B4CCF /* ListPersonViewController.m */,
 				04EFF8161C58836C006B4CCF /* SettingViewController.h */,
 				04EFF8171C58836C006B4CCF /* SettingViewController.m */,
 			);
@@ -441,6 +465,8 @@
 				04EFF8671C5A2A75006B4CCF /* setting-icon.png in Resources */,
 				04EFF8691C5B1F0F006B4CCF /* midu.jpg in Resources */,
 				045FFB4D1C3B710100F7B791 /* LaunchScreen.storyboard in Resources */,
+				049824181C5BCC5500E67EEB /* ListPersonTableViewCell.xib in Resources */,
+				049824201C5C0AD000E67EEB /* ChatViewController.xib in Resources */,
 				04EFF86D1C5B2095006B4CCF /* hami.jpg in Resources */,
 				045FFB4A1C3B710100F7B791 /* Assets.xcassets in Resources */,
 				04EFF86B1C5B2047006B4CCF /* huyenmy.jpg in Resources */,
@@ -480,6 +506,7 @@
 				045FFB481C3B710100F7B791 /* TrueLoveFinder.xcdatamodeld in Sources */,
 				045FFB8A1C3B811D00F7B791 /* Scheduler.m in Sources */,
 				04EFF8151C58835E006B4CCF /* ListPersonViewController.m in Sources */,
+				049824171C5BCC5500E67EEB /* ListPersonTableViewCell.m in Sources */,
 				04EFF8181C58836C006B4CCF /* SettingViewController.m in Sources */,
 				045FFB8C1C3B811D00F7B791 /* ViewManager.m in Sources */,
 				045FFB3F1C3B710100F7B791 /* AppDelegate.m in Sources */,
@@ -491,6 +518,7 @@
 				045FFB3C1C3B710100F7B791 /* main.m in Sources */,
 				045FFB941C3B8B2D00F7B791 /* CardView.m in Sources */,
 				045FFB8E1C3B811D00F7B791 /* ZLSwipeableViewMovement.m in Sources */,
+				0498241F1C5C0AD000E67EEB /* ChatViewController.m in Sources */,
 				045FFB891C3B811D00F7B791 /* PanGestureRecognizer.m in Sources */,
 				04EFF80E1C578377006B4CCF /* MCNewCustomLayer.m in Sources */,
 			);

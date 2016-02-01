@@ -68,7 +68,7 @@
     Person *person1 = [[Person alloc] init];
     Person *person2 = [[Person alloc] init];
     Person *person3 = [[Person alloc] init];
-    [person1 setPerson:@"Hà Mi" images:self.photos];
+    [person1 setPerson:@"Hạ Vi" images:self.photos];
     [person2 setPerson:@"Huyền My" images:self.photos];
     [person3 setPerson:@"Mỹ Dung" images:self.photos];
     [self.persons addObject:person1];
@@ -185,6 +185,7 @@
         }
     });
 }
+
 #pragma mark - Random Function
 -(int) generateRandomNumberWithlowerBound:(int)lowerBound
                                upperBound:(int)upperBound
