@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041DCBCF1C69F6130046FDD0 /* ProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041DCBCD1C69F6130046FDD0 /* ProfileDetailViewController.m */; };
+		041DCBD01C69F6130046FDD0 /* ProfileDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041DCBCE1C69F6130046FDD0 /* ProfileDetailViewController.xib */; };
 		045FFB3C1C3B710100F7B791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB3B1C3B710100F7B791 /* main.m */; };
 		045FFB3F1C3B710100F7B791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB3E1C3B710100F7B791 /* AppDelegate.m */; };
 		045FFB421C3B710100F7B791 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FFB411C3B710100F7B791 /* ViewController.m */; };
@@ -65,6 +67,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041DCBCC1C69F6130046FDD0 /* ProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDetailViewController.h; sourceTree = "<group>"; };
+		041DCBCD1C69F6130046FDD0 /* ProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileDetailViewController.m; sourceTree = "<group>"; };
+		041DCBCE1C69F6130046FDD0 /* ProfileDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileDetailViewController.xib; sourceTree = "<group>"; };
 		045FFB371C3B710000F7B791 /* TrueLoveFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueLoveFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045FFB3B1C3B710100F7B791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045FFB3D1C3B710100F7B791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +167,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041DCBCA1C69F5E40046FDD0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				04EFF8161C58836C006B4CCF /* SettingViewController.h */,
+				04EFF8171C58836C006B4CCF /* SettingViewController.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		041DCBCB1C69F5F50046FDD0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				041DCBCC1C69F6130046FDD0 /* ProfileDetailViewController.h */,
+				041DCBCD1C69F6130046FDD0 /* ProfileDetailViewController.m */,
+				041DCBCE1C69F6130046FDD0 /* ProfileDetailViewController.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		045FFB2E1C3B710000F7B791 = {
 			isa = PBXGroup;
 			children = (
@@ -309,11 +333,11 @@
 		04C3B8A01C46629D00243CD3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				041DCBCB1C69F5F50046FDD0 /* Profile */,
+				041DCBCA1C69F5E40046FDD0 /* Setting */,
 				049824131C5BCBCE00E67EEB /* List */,
 				045FFB401C3B710100F7B791 /* ViewController.h */,
 				045FFB411C3B710100F7B791 /* ViewController.m */,
-				04EFF8161C58836C006B4CCF /* SettingViewController.h */,
-				04EFF8171C58836C006B4CCF /* SettingViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -472,6 +496,7 @@
 				04EFF86B1C5B2047006B4CCF /* huyenmy.jpg in Resources */,
 				045FFB451C3B710100F7B791 /* Main.storyboard in Resources */,
 				04EFF8651C5A295D006B4CCF /* chat-icon.png in Resources */,
+				041DCBD01C69F6130046FDD0 /* ProfileDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +536,7 @@
 				045FFB8C1C3B811D00F7B791 /* ViewManager.m in Sources */,
 				045FFB3F1C3B710100F7B791 /* AppDelegate.m in Sources */,
 				045FFB871C3B811D00F7B791 /* DefaultShouldSwipeDeterminator.m in Sources */,
+				041DCBCF1C69F6130046FDD0 /* ProfileDetailViewController.m in Sources */,
 				045FFB971C3BABC700F7B791 /* Person.m in Sources */,
 				045FFB8D1C3B811D00F7B791 /* ZLSwipeableView.m in Sources */,
 				04EFF8111C578377006B4CCF /* MCSliceLayer.m in Sources */,

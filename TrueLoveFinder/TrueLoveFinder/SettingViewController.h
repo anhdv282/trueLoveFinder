@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SettingViewController : UIViewController
+#import "ProfileDetailViewController.h"
+@interface SettingViewController : UIViewController {
+    ProfileDetailViewController *profileDetailVC;
+}
+@property (weak, nonatomic) IBOutlet UIImageView *imgProfile;
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+@property (weak, nonatomic) IBOutlet UIView *blurViewProfile;
+@property (weak, nonatomic) IBOutlet UIImageView *blurImageViewProfile;
 
 @end
