@@ -1,5 +1,5 @@
 //
-//  SettingViewController.h
+//  SettingSpotyViewController.h
 //  TrueLoveFinder
 //
 //  Created by mac on 3/30/16.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SettingViewController : UIViewController
+#import "MGSpotyViewController.h"
+@interface SettingSpotyViewController : MGSpotyViewController
 
 @end

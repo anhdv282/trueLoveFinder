@@ -2,12 +2,12 @@
 //  SettingViewController.m
 //  TrueLoveFinder
 //
-//  Created by mac on 1/27/16.
+//  Created by mac on 3/30/16.
 //  Copyright © 2016 vad. All rights reserved.
 //
 
 #import "SettingViewController.h"
-
+#import "SettingSpotyViewController.h"
 @interface SettingViewController ()
 
 @end
@@ -17,14 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.imgProfile.image = [self roundedRectImageFromImage:self.imgProfile.image size:self.imgProfile.frame.size withCornerRadius:(self.imgProfile.frame.size.width/2)];
-//    [self updateBlurView:self.blurViewProfile withAlpha:0.75];
-    profileDetailVC = [[ProfileDetailViewController alloc] initWithNibName:@"ProfileDetailViewController" bundle:nil];
-    profileDetailVC.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    [self.view addSubview:profileDetailVC.view];
-    [self.view sendSubviewToBack:profileDetailVC.view];
-    [self addChildViewController:profileDetailVC];
-    [profileDetailVC didMoveToParentViewController:self];
+    SettingSpotyViewController *spotyViewController = [[SettingSpotyViewController alloc] initWithMainImage:[UIImage imageNamed:@"midu.jpg"]];
+    [self.view addSubview:spotyViewController.view];
+    [self.view bringSubviewToFront:spotyViewController.view];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,30 +27,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark Change View To Blur View
-- (void) updateBlurView:(UIView*) viewCurrent withAlpha:(CGFloat) alpha {
-    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-    [viewCurrent setAlpha:alpha];
-    visualEffectView.frame = CGRectMake(0, 0, viewCurrent.frame.size.width, viewCurrent.frame.size.height);
-    //    visualEffectView.frame = viewCurrent.bounds;
-    [viewCurrent addSubview:visualEffectView];
-}
-
-//round Image
-- (UIImage*)roundedRectImageFromImage:(UIImage *)image
-                                 size:(CGSize)imageSize
-                     withCornerRadius:(float)cornerRadius {
-    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0.0);
-    CGRect bounds=(CGRect){CGPointZero,imageSize};
-    [[UIBezierPath bezierPathWithRoundedRect:bounds
-                                cornerRadius:cornerRadius] addClip];
-    [image drawInRect:bounds];
-    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return finalImage;
-}
 /*
 #pragma mark - Navigation
 
